@@ -4,9 +4,9 @@ function getTotalBalanceByGender(users, gender){
     return users.filter(user => user.gender === gender).reduce((totalBalance, user) => totalBalance + user.balance, 0);
 }
 
-console.group('TASK - 4');
+//strict mode вибивав помилку, писав, що змінна allUsers вже оголошенна, не зрозумів. перейменував все ок
 
-const allUsers = [
+const allUsers4 = [
     {
     name: "Moore Hensley",
     gender: "male",
@@ -41,11 +41,13 @@ const allUsers = [
     name: "Sheree Anthony",
     gender: "female",
     balance: 2764
-  }
+  },
 ];
 
-console.log(getTotalBalanceByGender(allUsers, "male")); // 12053
+console.group('TASK - 4');
 
-console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
+console.log(getTotalBalanceByGender(allUsers4, "male")); // 12053
+
+console.log(getTotalBalanceByGender(allUsers4, "female")); // 8863
 
 console.groupEnd();
