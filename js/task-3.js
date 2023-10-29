@@ -1,9 +1,6 @@
-"use strict"
 
-function sortByDescendingFriendCount(users){
-    //toSorted не працює хелп) використав просто sort
-    return users.sort((firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length);
-};
+const sortByDescendingFriendCount = (users) => users.toSorted((firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length);
+
 
 console.group('TASK - 3');
 

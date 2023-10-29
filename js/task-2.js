@@ -1,8 +1,5 @@
-"use strict"
 
-function getUsersWithFriend(users, friendName){
-    return users.filter(user => user.friends.includes(friendName));
-};
+const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName));
 
 console.group('TASK - 2');
 

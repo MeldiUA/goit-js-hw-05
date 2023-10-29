@@ -1,8 +1,5 @@
-"use strict"
 
-function getUserNames(users){
-    return users.map(user => user.name);
-};
+const getUserNames = (users) => users.map(user => user.name);
 
 console.group('TASK - 1');
 console.log(
