@@ -42,8 +42,8 @@ const allUsers = [
 
 console.group('TASK - 4');
 
-console.log(getTotalBalanceByGender(allUsers4, "male")); // 12053
+console.log(getTotalBalanceByGender(allUsers, "male")); // 12053
 
-console.log(getTotalBalanceByGender(allUsers4, "female")); // 8863
+console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
 
 console.groupEnd();
